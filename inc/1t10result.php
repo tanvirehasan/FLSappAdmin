@@ -1,9 +1,7 @@
 <?php
 
-
 	include 'conn.php';
-    include 'fun.php'; 
-
+	include 'fun.php'; 
 
 	$sql = "SELECT AVG(current) as 'sumcurrent', AVG(expected) as 'sumexpected' FROM onetoten ";
 	$result = mysqli_query($conn, $sql);
